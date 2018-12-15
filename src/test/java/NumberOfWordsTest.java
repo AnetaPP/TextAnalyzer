@@ -25,10 +25,12 @@ public class NumberOfWordsTest {
     }
 
     private Object[][] sentencesToAnalyze() {
-        return new Object[][]{{"Ala ma kota,3"},
-                {" ,0"},
-                {"W Szczebrzeszynie chrząszcz brzmi w trzcinie, 6"},
-                {"żółć,1"}
+        return new Object[][]{{"Ala ma kota.",3},
+                {" ",0},
+                {"W Szczebrzeszynie chrząszcz, brzmi w trzcinie", 6},
+                {"żółć",1},
+                {"Cóż to?", 2},
+                {"Ala - Kot",2}
         };
     }
 }
